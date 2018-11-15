@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <div className="canvas"><Particles params={{
+      <Particles params={{
             		particles: {
             			line_linked: {
             				shadow: {
@@ -20,10 +20,14 @@ class App extends Component {
             		}
             	}}
               style={{
-                backgroundColor: "#000100" 
+                backgroundColor: "#000100",
+                top: 0,
+    			display:'block',
+    			position: 'fixed',
+    			zIndex: '-1',
+   				 height: '100%',
               }}
             />
-       </div>
       	<h1>React Image Gallery</h1>
       	<div className="photography-body"><Photography/></div>
       </div>
