@@ -1,0 +1,30 @@
+.gallery-container {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+  padding-top: .9375rem;
+}
+
+.gallery-content-loaded {
+  opacity: 1;
+  transition: 3s;
+  max-width: 200px;
+ height: auto;
+ border-radius: 6px;
+}
+
+.gallery-content-loading {
+  opacity: 0;
+  transition: 3s;
+  max-width: 200px;
+ height: auto;
+ border-radius: 6px;
+}
+
+img#thumbnail:hover {
+  cursor: pointer;
+  opacity: 0.4;
+  transition: 0.1s;
+}
+
+
