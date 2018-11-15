@@ -84,3 +84,25 @@
 .round {
     border-radius: 60%;
 }
+
+@media only screen and (max-width: 900px) {
+  .img-modal {
+    padding: 0;
+    max-width: 100%;
+    max-height: 80%;
+  }
+
+  #prev {
+    position: fixed;
+    bottom: 50%;
+  }
+
+  #next {
+    position: fixed;
+    bottom: 50%;
+  }
+
+  #close {
+    position: fixed;
+  }
+}
